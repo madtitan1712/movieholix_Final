@@ -8,7 +8,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const handleNavigate = () => {
-    navigate('/createaccount'); // This will navigate to the create account page
+    navigate('/createaccount'); 
   };
 
   useEffect(() => {
@@ -22,7 +22,7 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen">
-      {/* Image Container */}
+      
       <div className="absolute inset-0">
         <img
           src={lalaland}
@@ -30,11 +30,10 @@ const Hero = () => {
           className={`w-full h-full object-cover transition-opacity duration-700 ease-in
             ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
         />
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/30" /> {/* Adjust opacity as needed */}
+        <div className="absolute inset-0 bg-black/30" /> 
       </div>
 
-      {/* Content Container */}
+      
       <div className="relative z-10 max-w-5xl mx-auto h-full flex flex-col justify-center px-4">
         <div 
           className={`space-y-4 transition-all duration-500 ease-out
@@ -49,10 +48,10 @@ const Hero = () => {
           <h2 className="text-2xl text-white">
             Tell your friends what's good.
           </h2>
-          {/* Add onClick here */}
+          
           <button 
             className="mt-6 px-6 py-2 bg-green-500 text-white rounded-md hover:bg-green-600 transition-colors" 
-            onClick={handleNavigate} // onClick event to navigate
+            onClick={handleNavigate} 
           >
             Get started — it's free!
           </button>

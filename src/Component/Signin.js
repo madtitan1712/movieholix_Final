@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { User, Lock } from 'lucide-react';
 import suzume from './Suzume.jpg';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const Signin = () => {
   const [formData, setFormData] = useState({
@@ -9,13 +9,12 @@ const Signin = () => {
     password: ''
   });
 
-  const navigate = useNavigate(); // Initialize navigate
+  const navigate = useNavigate(); 
 
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-    
-    // Redirect to /films after form submission
+
     navigate('/flims');
   };
 
@@ -25,14 +24,12 @@ const Signin = () => {
 
   return (
     <div className="min-h-screen relative overflow-hidden bg-[#0f1215]">
-      {/* Background Image */}
+      
       <img 
         src={suzume}
         alt="background" 
         className="absolute w-full h-full object-cover object-center opacity-30"
       />
-      
-      {/* Content Container */}
       <div className="relative z-10 w-full min-h-screen flex items-center justify-center">
         <div className="w-full max-w-md p-8 space-y-8 bg-[#161a1e]/90 rounded-md border border-[#2a3038] shadow-xl backdrop-blur">
           {/* Heading */}
@@ -43,9 +40,9 @@ const Signin = () => {
             <div className="h-[2px] w-full bg-[#00ff66] mx-auto mt-2 shadow-[0_0_10px_#00ff66]"></div>
           </div>
 
-          {/* Sign In Form */}
+          
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Username Field */}
+            
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center">
                 <User className="h-5 w-5 text-[#7a8999]" />
@@ -61,7 +58,7 @@ const Signin = () => {
               />
             </div>
 
-            {/* Password Field */}
+            
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center">
                 <Lock className="h-5 w-5 text-[#7a8999]" />
@@ -77,7 +74,7 @@ const Signin = () => {
               />
             </div>
 
-            {/* Submit Button */}
+            
             <button
               type="submit"
               className="w-full py-3 px-4 bg-[#00ff66] text-[#0f1215] rounded-md font-medium
@@ -88,7 +85,7 @@ const Signin = () => {
             </button>
           </form>
 
-          {/* Sign Up Link */}
+          
           <div className="text-center text-[#7a8999]">
             Don't have an account?{' '}
             <button

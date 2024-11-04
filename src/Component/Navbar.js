@@ -21,7 +21,7 @@ const EntryPage = () => {
               </h1>
             </div>
 
-            {/* Navigation */}
+            
             <div className="flex items-center space-x-4">
               <div className="relative">
                 <div className={`flex items-center transition-all duration-300 ${

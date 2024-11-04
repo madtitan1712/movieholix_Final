@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
+import { Link, useNavigate } from "react-router-dom"; 
 import bale from './bale.jpg'
 
 const styles = {
@@ -84,7 +84,7 @@ const Createaccount = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Mark all fields as touched on submit
+    
     setTouched({
       name: true,
       email: true,
@@ -143,7 +143,7 @@ const Createaccount = () => {
               name="name"
               value={formData.name}
               onChange={handleChange}
-              onBlur={handleBlur} // Add onBlur handler
+              onBlur={handleBlur} 
               placeholder="Enter your name"
               className={`${styles.input} ${getFieldError('name') ? styles.inputError : ''}`}
             />
@@ -162,7 +162,7 @@ const Createaccount = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              onBlur={handleBlur} // Add onBlur handler
+              onBlur={handleBlur} 
               placeholder="Enter your email"
               className={`${styles.input} ${getFieldError('email') ? styles.inputError : ''}`}
             />
@@ -181,7 +181,7 @@ const Createaccount = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              onBlur={handleBlur} // Add onBlur handler
+              onBlur={handleBlur} 
               placeholder="Enter your password"
               className={`${styles.input} ${getFieldError('password') ? styles.inputError : ''}`}
             />
@@ -200,7 +200,7 @@ const Createaccount = () => {
               name="confirmPassword"
               value={formData.confirmPassword}
               onChange={handleChange}
-              onBlur={handleBlur} // Add onBlur handler
+              onBlur={handleBlur} 
               placeholder="Confirm your password"
               className={`${styles.input} ${getFieldError('confirmPassword') ? styles.inputError : ''}`}
             />
