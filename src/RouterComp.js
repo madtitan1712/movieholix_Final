@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import App from './App'
 import Signin from './Component/Signin'
 import Createaccount from './Component/Createaccount'
-import Lists from './Component/Lists'
 import Movies from './Component/Movies'
 const RouterComp = () => {
   return (
@@ -13,7 +12,6 @@ const RouterComp = () => {
                 <Route path='/' element={<App/>}></Route>
                 <Route path='/signin' element={<Signin/>}></Route>
                 <Route path='/createaccount' element={<Createaccount/>}></Route>
-                <Route path='/lists' element={<Lists/>}></Route>
                 <Route path='/flims' element={<Movies/>}></Route>
             </Routes>
         </BrowserRouter>
